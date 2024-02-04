@@ -1,6 +1,6 @@
-# geom99lab2
+# Web GIS Lab 2
 
-Week 3 Checklist
+## Week 3 Checklist
 1. Creating & Sharing GIS Content using AGOL [Certificate] 
 
 
@@ -12,8 +12,8 @@ Week 3 Checklist
 
 4. Discover JSON & Importing Data into Web Maps [Create Map]
 
-Week 4 Checklist
-* AGOL is a PaaS and SaaS offered by Esri 
+## Week 4 Checklist
+***AGOL is a PaaS and SaaS offered by Esri*** 
 
 1. Introducing AGOL Developers Website [Review]
 
