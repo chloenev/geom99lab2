@@ -1,0 +1,51 @@
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>ArcGIS Maps SDK for JavaScript Tutorials: Display a map</title>
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.28/"></script>
+
+    <!-- Adding required modules - Map module and MapView module
+    https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html
+    https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html -->
+    <script>
+        require(["esri/config", "esri/Map", "esri/views/MapView"], function(esriConfig, Map, MapView) {
+            
+            // Apply API key created for this lab 
+            esriConfig.apiKey = "AAPK29a70b988fc44ae7ab8cd3789dffa8acZdnQLgQ_zW9RJ4KUnQlYAdN07Fm6Q4HXBQY9QjXvGwijibFkcKJVIs8KZE2qeoyM";
+
+            // Set the basemap layer
+            const map = new Map({
+                basemap: "arcgis/topographic" // basemap styles service
+        });
+
+            // Create a map view 
+            const view = new MapView({
+            map: map,
+            center: [-118.805, 34.027], // Longitude, latitude
+            zoom: 13, // Zoom level
+            container: "viewDiv" // Div element - displays the contents of the map
+            });
+
+        });
+      </script>
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>
