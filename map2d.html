@@ -30,17 +30,19 @@
 
             // Set the basemap layer
             const map = new Map({
-                basemap: "arcgis/topographic" // basemap styles service
-        });
-
-            // Create a map view 
-            const view = new MapView({
-            map: map,
-            center: [-118.805, 34.027], // Longitude, latitude
-            zoom: 13, // Zoom level
-            container: "viewDiv" // Div element - displays the contents of the map
+              basemap: "arcgis-topographic" // Basemap layer
             });
 
+            // Set location of map view
+            const view = new MapView({
+              map: map,
+              center: [-118.805, 34.027],
+              zoom: 13, // scale: 72223.819286
+              container: "viewDiv",
+              constraints: {
+                snapToZoom: false
+              }
+            });
         });
       </script>
   </head>
