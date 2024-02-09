@@ -1,18 +1,20 @@
 # Web GIS Lab 2
 
 ## Week 3 Checklist
-1. Creating & Sharing GIS Content using AGOL [**Certificate**] 
+[x] 1. Creating & Sharing GIS Content using AGOL [**Certificate**] 
 
 
-2. Map Viewers & Web Maps [Read]
+[x] 2. Map Viewers & Web Maps [Read]
 
 
-3. What’s New in AGOL [Review]
+[x] 3. What’s New in AGOL [Review]
 
 
-4. Discover JSON & Importing Data into Web Maps [**Create Map**]
+[x] 4. Discover JSON & Importing Data into Web Maps [**Create Map**]
 
-https://fleming.maps.arcgis.com/apps/mapviewer/index.html?webmap=8cf7e264884740728d14598a77b89a3c 
+Web Map - https://fleming.maps.arcgis.com/apps/mapviewer/index.html?webmap=8cf7e264884740728d14598a77b89a3c 
+
+The GeoJSON file that was saved in VS Code was published to AGOL as a feature layer. The hosted feature layer GeoJSON data is stored in this file. 
 
 ![image](https://github.com/chloenev/geom99lab2/assets/146447252/4a9dd1ac-469e-4d51-b914-91f9e96f21e7)
 
