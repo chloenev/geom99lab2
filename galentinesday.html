@@ -1,3 +1,5 @@
+<!-- Created using the tutorial: https://developers.arcgis.com/javascript/latest/tutorials/display-a-web-map/ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +12,13 @@
       margin: 0;
       height: 100vh;
       width: 100%;
+      /* There is awkward scrolling that makes it hard to navigate the map and go back to top of page, so preventing scrolling */ 
       overflow: hidden;
     }
 
     h1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: hotpink;
+        color: #f72c3f;
         text-align: center;
     }
 
@@ -40,6 +43,7 @@
 
       const webmap = new WebMap({
         portalItem: {
+          // Item ID of my AGOL web map
           id: "4f33990e9ea141fbbd86ceaad52ba2f7"
         }
       });
