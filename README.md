@@ -34,4 +34,6 @@
 
    Tutorial 1: https://chloenev.github.io/geom99lab2/map2d.html
 
-   Tutorial 2: 
+   Tutorial 2:
+
+   Tutorial 3 (Display a web map) - Bonus if Valentine's themed!: https://chloenev.github.io/geom99lab2/galentinesday.html 
