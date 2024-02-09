@@ -1,7 +1,7 @@
 # Web GIS Lab 2
 
 ## Week 3 Checklist
-[x] 1. Creating & Sharing GIS Content using AGOL [**Certificate**] 
+[x] Creating & Sharing GIS Content using AGOL [**Certificate**] 
 
 
 [x] 2. Map Viewers & Web Maps [Read]
