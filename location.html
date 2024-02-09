@@ -5,6 +5,7 @@
     <title>ArcGIS Maps SDK for JavaScript Tutorials: Display your location</title>
 
     <style>
+      @import url("https://js.arcgis.com/4.28/@arcgis/core/assets/esri/themes/light/main.css");
       html,
       body,
       #viewDiv {
@@ -18,13 +19,14 @@
     <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
     <script src="https://js.arcgis.com/4.28/"></script>
 
+
     <script>
       require([
           "esri/config",
           "esri/Map",
           "esri/views/MapView",
-          
-
+          // Changes map view to user's current location
+          "esri/widgets/Locate",
 
           "esri/widgets/Track",
           "esri/Graphic"
