@@ -35,8 +35,6 @@
             esriConfig,
             Map,
             MapView,
-            Locate,
-
             Track,
             Graphic
 
@@ -45,7 +43,7 @@
         esriConfig.apiKey = "AAPK29a70b988fc44ae7ab8cd3789dffa8acZdnQLgQ_zW9RJ4KUnQlYAdN07Fm6Q4HXBQY9QjXvGwijibFkcKJVIs8KZE2qeoyM";
 
         const map = new Map({
-          basemap: "arcgis/navigation"
+          basemap: "arcgis-navigation"
         });
 
         const view = new MapView({
@@ -61,7 +59,7 @@
             symbol: {
               type: "simple-marker",
               size: "12px",
-              color: "pink",
+              color: "blue",
               outline: {
                 color: "#efefef",
                 width: "1.5px"
