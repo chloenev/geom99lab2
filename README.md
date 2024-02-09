@@ -31,3 +31,5 @@
 
 
 6. Explore and Enhance the Tutorials for ArcGIS JavaScript API 
+   Tutorial 1: https://chloenev.github.io/geom99lab2/map2d.html
+   Tutorial 2: 
