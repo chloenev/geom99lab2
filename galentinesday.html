@@ -1,14 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Happy Galentine's Day <3</title>
+  <title>Happy Galentine's Day! <3</title>
   <style>
     html, body, #viewDiv {
       padding: 0;
       margin: 0;
-      height: 100%;
+      height: 100vh;
       width: 100%;
+      overflow: hidden;
+    }
+
+    h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: hotpink;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
     }
   </style>
   <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
@@ -18,11 +30,11 @@
     require([
       "esri/config",
       "esri/Map",
-      "esri/WebMap",
       "esri/views/MapView",
       "esri/widgets/ScaleBar",
-      "esri/widgets/Legend"
-    ], function(esriConfig, WebMap, MapView, ScaleBar, Legend) {
+      "esri/widgets/Legend",
+      "esri/WebMap"
+    ], function(esriConfig, Map, MapView, ScaleBar, Legend, WebMap) {
 
     esriConfig.apiKey = "AAPK29a70b988fc44ae7ab8cd3789dffa8acZdnQLgQ_zW9RJ4KUnQlYAdN07Fm6Q4HXBQY9QjXvGwijibFkcKJVIs8KZE2qeoyM";
 
@@ -34,27 +46,28 @@
 
       const view = new MapView({
         container: "viewDiv",
-
         map: webmap
-
       });
 
       const scalebar = new ScaleBar({
         view: view
       });
-
       view.ui.add(scalebar, "bottom-left");
 
-    const legend = new Legend ({
+      const legend = new Legend({
         view: view
       });
       view.ui.add(legend, "top-right");
 
-  });
+    });
   </script>
 </head>
 <body>
-  <div>Happy Galentine's Day</div>
+    <div>
+        <h1>Happy Galentine's Day!</h1>
+        <p>As an ode to female friendship, here are some ideas of how to spend this Valentine's Day with your girlfriends in the Vancouver Metro Area.</p>
+        <p>Click on the red hearts to learn the name, details, and price point of each location!</p>
+    </div>
   <div id="viewDiv"></div>
 </body>
 </html>
